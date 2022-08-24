@@ -1,0 +1,168 @@
+/* elements */
+:root {
+  --primary-color: #5faec8;
+  --secondary-color: #002b5b;
+  --tertiary-color: #2b4865;
+  --quaternary-color: #256d85;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  background: #f0e4ec;
+}
+
+h1 {
+  font-family: "Tiro Telugu", serif;
+  color: var(--secondary-color);
+  font-size: 38px;
+}
+h2 {
+  margin: 8px 0;
+  font-size: 14px;
+}
+h3 {
+  font-family: "Indie Flower", cursive;
+  font-size: 22px;
+}
+
+hr {
+  background-color: var(--primary-color);
+  border-color: rgb(231, 239, 239);
+  border-style: none;
+  border-top-style: dashed;
+  border-width: 10px;
+  width: 100%;
+  margin: 2px 0 2px 0;
+}
+li {
+  padding: 8px 0;
+}
+
+/* primary section */
+
+/* head section */
+
+.headSection {
+  background-color: var(--primary-color);
+  padding: 50px 0px 50px 0px;
+}
+
+/* middle section */
+.imgContainer {
+  display: inline-block;
+  margin: 45px;
+  box-shadow: 7px 10px 25px #612f7a;
+  border-radius: 7px;
+  position: relative;
+}
+.lessonsImg {
+  float: left;
+  width: 220px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.miniBox {
+  position: absolute;
+  border-radius: 3px 3px 0 0;
+  background-color: gray;
+  display: none;
+  visibility: hidden;
+  z-index: 1;
+}
+.imgContainer:hover .miniBox {
+  display: block;
+  visibility: visible;
+  transition: transform 1.5s ease-in-out;
+}
+.miniBox:hover {
+  transform: scale(1.4, 1.2);
+}
+
+.lessonInfoImg {
+  border-radius: 3px 3px 0 0;
+}
+.lessonDetails {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -125px;
+  padding-bottom: 10px;
+  height: 155px;
+  background-color: var(--quaternary-color);
+  border-radius: 0 0 3px 3px;
+}
+.detailsList {
+  font-size: 12px;
+  margin: 1px;
+  padding: 0 30px;
+  text-align: center;
+  direction: rtl;
+}
+.passcodeInput {
+  width: 70px;
+  border: 0;
+  background-color: inherit;
+}
+.copyButton {
+  padding: 0;
+  border-radius: 40%;
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+}
+.copyButton:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--tertiary-color);
+}
+.copyButton:active {
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--primary-color);
+}
+.copyPassIcon {
+  float: left;
+  width: 18px;
+  height: 18px;
+}
+#middleContainers {
+  background-color: var(--primary-color);
+  padding: 45px 0 45px 0;
+}
+
+/* tests */
+
+.tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
