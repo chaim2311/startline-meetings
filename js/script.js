@@ -38,15 +38,18 @@ function copyPass(id) {
       copyText = document.getElementById("ninthPass");
       tooltip = document.getElementById("copyPassNineTooltip");
       break;
-      case "tenthPassButton":
+    case "tenthPassButton":
       copyText = document.getElementById("tenthPass");
       tooltip = document.getElementById("copyPassTenTooltip");
       break;
   }
   navigator.clipboard.writeText(copyText.value);
   tooltip.innerHTML = "Copied: " + copyText.value;
+  setTimeout(() => {
+    tooltip.innerHTML = "Copy to clipboard";
+  }, 3000);
 }
 // function outFunc() {
-//   let tooltip = document.getElementsByClassName("tooltiptext");
+//   var tooltip = document.getElementById("copyPassOneTooltip");
 //   tooltip.innerHTML = "Copy to clipboard";
 // }
