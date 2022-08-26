@@ -166,3 +166,18 @@ button:hover .tooltipText {
   visibility: visible;
   opacity: 1;
 }
+/* bottom section */
+.bottomSection{
+  background-color: var(--primary-color);
+  height: 60px;
+}
+.socialIcons{
+  padding: 0 0 0 45px;
+}
+#Copyright{
+  margin: 0;
+  padding: 18px 0 16px;
+  height: 24px;
+  font-size: 15px;
+  display: inline-block;
+}

@@ -1,6 +1,6 @@
 function copyPass(id) {
-  var copyText = "";
-  var tooltip = "";
+  let copyText = "";
+  let tooltip = "";
   switch (id) {
     case "firstPassButton":
       copyText = document.getElementById("firstPass");
@@ -49,7 +49,7 @@ function copyPass(id) {
     tooltip.innerHTML = "Copy to clipboard";
   }, 3000);
 }
-// function outFunc() {
-//   var tooltip = document.getElementById("copyPassOneTooltip");
-//   tooltip.innerHTML = "Copy to clipboard";
-// }
+function outFunc() {
+  let tooltip = document.getElementById("copyPassOneTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
